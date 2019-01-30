@@ -1,0 +1,608 @@
+%-- Abbreviated refernence
+@string{SIGMOD="SIGMOD"}
+@string{VLDB="VLDB"}
+@string{PVLDB="PVLDB"}
+@string{ICDE="ICDE"}
+@string{PODS="PODS"}
+@string{EDBT="EDBT"}
+@string{ESWC="ESWC"}
+@string{DEBull="IEEE Data Engineering Bulletin"}
+@string{SSDBM="SSDBM"}
+@string{CIKM="CIKM"}
+@string{TKDE="TKDE"}
+@string{TODS="TODS"}
+@string{SSTD="SSTD"}
+@string{SSD="SSD"}
+@string{SIGSPATIAL="SIGSPATIAL"}
+@string{IDEAS="IDEAS"}
+@string{CIDR="CIDR"}
+@string{MDM="MDM"}
+@string{DASFAA="DASFAA"}
+@string{DEXA="DEXA"}
+@string{ISWC="ISWC"}
+@string{SSWS="SSWS"}
+@string{SWDB="SWDB"}
+@string{SIGKDD="SIGKDD"}
+@string{WWW="WWW"}
+@string{ADBC="ADC"}
+@string{LAWEB="LA-WEB"}
+@string{PSSS="PSSS"}
+@string{SEMWEB="SemWeb"}
+@string{COMMACM="Commun. ACM"}
+@string{WIDM="WIDM"}
+@string{INFOSYS="Information Systems"}
+@string{UAI="UAI"}
+@string{TOIS="TOIS"}
+@string{WELCOM="WELCOM"}
+@string{RECSYS="RecSys"}
+@string{COOPIS="CoopIS"}
+@string{IEEEIS="IEEE Intelligent Systems"}
+@string{IUI="IUI"}
+@string{ICCIT="ICCIT"}
+@string{ISMIS="ISMIS"}
+@string{SIGIR="SIGIR"}
+@string{CHI="CHI"}
+@string{CSWC="CSWC"}
+@string{TOIT="ACM TOIT"}
+@string{PERSDB="PersDB"}
+@string{UIC="UIC"}
+@string{TMC="TMC"}
+@string{ICPADS="ICPADS"}
+@string{NSDI="NSDI"}
+@string{OSDI="OSDI"}
+
+%-- Full refernence
+@string{IEEEIC="IEEE Internet Computing"}
+@string{VLDB="Proceedings of the International Conference on Very Large Data Bases, VLDB"}
+@string{PVLDB="Proceedings of the International Conference on Very Large Data Bases, PVLDB"}
+@string{SIGMOD="Proceedings of the ACM International Conference on Management of Data, SIGMOD"}
+@string{PODS="Proceedings of the ACM Symposium on Principles of Database Systems, PODS"}
+@string{ICDE="Proceedings of the International Conference on Data Engineering, ICDE"}
+@string{EDBT="Proceedings of the International Conference on Extending Database Technology, EDBT"}
+@string{CIDR="Proceedings of the International Conference on Innovative Data Systems Research, CIDR"}
+@string{TODS="ACM Transactions on Database Systems, TODS"}
+@string{TKDE="IEEE Transactions on Knowledge and Data Engineering, TKDE"}
+@string{SSD="Proceedings of the International Symposium on Advances in Spatial Databases, SSD"}
+@string{SSTD="Proceedings of the International Symposium on Advances in Spatial and Temporal Databases, SSTD"}
+@string{CIKM="Proceedings of the International Conference on Information and Knowledge Managemen, CIKM"}
+@string{SIGSPATIAL="Proceedings of the ACM International Conference on Advances in Geographic Information Systems, SIGSPATIAL"}
+@string{SSDBM="Proceedings of the International Conference on Scientific and Statistical Database Management, SSDBM"}
+@string{DEBull="IEEE Data Engineering Bulletin"}
+@string{IDEAS="Proceedings of the International Database Engineering and Applications Symposium, IDEAS"}
+@string{MDM="Proceedings of the International Conference on Mobile Data Management, MDM"}
+@string{DASFAA="Proceedings of the International Conference on Database Systems for Advanced Applications, DASFAA"}
+@string{DEXA="Proceedings of the International Conference on Database and Expert Systems Applications, DEXA"}
+@string{ESWC="Proceedings of the European Semantic Web Conference, ESWC"}
+@string{WWW="Proceedings of the International World Wide Web Conference, WWW"}
+@string{ADBC="Proceedings of the Australasian Database Conference, ADC"}
+@string{ISWC="Proceedings of the International Semantic Web Conference, ISWC"}
+@string{SWDB="Proceedings of the International Workshop on Semantic Web and Databases, SWDB"}
+@string{SSWS="Proceedings of the International Workshop on Scalable Semantic Web Knowledge Base Systems, SSWS"}
+@string{LAWEB="Proceedings of the Latin American Web Congress, LA-WEB"}
+@string{PSSS="Proceedings of the International Workshop on Practical and Scalable Semantic Systems, PSSS"}
+@string{SEMWEB="Proceedings of the International Workshop on the Semantic Web"}
+@string{COMMACM="Communications of the ACM"}
+@string{WIDM="Proceedings of the ACM International Workshop on Web Information and Data Management, WIDM"}
+@string{UAI="Proceedings of the Conference on Uncertainty in Artificial Intelligence, UAI"}
+@string{TOIS="ACM Transactions on Information Systems, TOIS"}
+@string{WELCOM="Proceedings of the International Workshop on Electronic Commerce, WELCOM"}
+@string{RECSYS="Proceedings of the ACM Conference on Recommender Systems, RecSys"}
+@string{COOPIS="Proceedings of the International Conference on Cooperative Information Systems, CoopIS"}
+@string{IUI="Proceedings of the International Conference on Intelligent User Interfaces"}
+@string{ICCIT="Proceedings of the International Conference on Computer and Information Technology, ICCIT"}
+@string{ISMIS="Proceedings of the International Symposium on Foundations of Intelligent Systems, ISMIS"}
+@string{SIGIR="Proceedings of the International ASM Conference on Research and Development in Information Retrieval, SIGIR"}
+@string{CHI="Proceedings of the ACM Conference on Human Factors in Computing Systems, CHI"}
+@string{CSWC="Proceedings of the ACM Conference on Computer Supported Cooperative Work, CSWC"}
+@string{UIC="Proceedings of the International Conference on Ubiquitous Intelligence and Computing, UIC"}
+@string{TMC="IEEE Transactions on Mobile Computing, TMC"}
+@string{IC2E="Proceedings of the IEEE International Conference on Cloud Engineering, IC2E"}
+@string{ICPADS="Proceedings of the International Conference on Parallel and Distributed Systems, ICPADS"}
+@string{ICDEW="Proceedings of the International Conference on Data Engineering Workshops"}
+@string{NSDI="Proceedings of the USENIX Symposium on Networked Systems Design and Implementation, NSDI"}
+@string{OSDI="Proceedings of the Symposium on Operating System Design and Implementation, OSDI"}
+
+
+
+@inproceedings{ZCL+18,
+  author    = {Zhuoyue Zhao and
+               Robert Christensen and
+               Feifei Li and
+               Xiao Hu and
+               Ke Yi},
+  title     = {Random Sampling over Joins Revisited},
+  booktitle = SIGMOD,
+  pages     = {1525--1539},
+  year      = {2018}
+}
+
+
+@article{K18,
+  author    = {Tim Kraska},
+  title     = {Northstar: An Interactive Data Science System},
+  journal   = PVLDB,
+  volume    = {11},
+  number    = {12},
+  pages     = {2150--2164},
+  year      = {2018}
+}
+
+@article{JTK+14,
+  author    = {Prasanth Jayachandran and
+               Karthik Tunga and
+               Niranjan Kamat and
+               Arnab Nandi},
+  title     = {Combining User Interaction, Speculative Query Execution and Sampling
+               in the {DICE} System},
+  journal   = PVLDB,
+  volume    = {7},
+  number    = {13},
+  pages     = {1697--1700},
+  year      = {2014}
+}
+
+@inproceedings{KJT+14,
+  author    = {Niranjan Kamat and
+               Prasanth Jayachandran and
+               Karthik Tunga and
+               Arnab Nandi},
+  title     = {Distributed and interactive cube exploration},
+  booktitle = ICDE,
+  pages     = {472--483},
+  year      = {2014}
+}
+
+@misc{nyctaxi,
+	key=   {a },
+	title = {New York City Taxi and Limousine Commission},
+	howpublished = "{\url{www.nyc.gov/html/tlc/html/about/trip\_record\_data.shtml}}",
+}
+
+@article{gcb+97,
+	author    = {Jim Gray and
+	Surajit Chaudhuri and
+	Adam Bosworth and
+	Andrew Layman and
+	Don Reichart and
+	Murali Venkatrao and
+	Frank Pellow and
+	Hamid Pirahesh},
+	title     = {Data Cube: {A} Relational Aggregation Operator Generalizing Group-by,
+	Cross-Tab, and Sub Totals},
+	journal   = {Data Mining Knowledge Discovery},
+	volume    = {1},
+	number    = {1},
+	pages     = {29--53},
+	year      = {1997}
+}
+
+@inproceedings{hru96,
+	author    = {Venky Harinarayan and
+	Anand Rajaraman and
+	Jeffrey D. Ullman},
+	title     = {Implementing Data Cubes Efficiently},
+	booktitle = SIGMOD,
+	pages     = {205--216},
+	year      = {1996}
+}
+
+@inproceedings{lhy+08,
+	author    = {Xiaolei Li and
+	Jiawei Han and
+	Zhijun Yin and
+	Jae{-}Gil Lee and
+	Yizhou Sun},
+	title     = {Sampling cube: a framework for statistical olap over sampling data},
+	booktitle = SIGMOD,
+	pages     = {779--790},
+	year      = {2008}
+}
+
+@inproceedings{br99,
+	author    = {Kevin S. Beyer and
+	Raghu Ramakrishnan},
+	title     = {Bottom-Up Computation of Sparse and Iceberg CUBEs},
+	booktitle = SIGMOD,
+	pages     = {359--370},
+	year      = {1999}
+}
+
+@inproceedings{hpd+01,
+	author    = {Jiawei Han and
+	Jian Pei and
+	Guozhu Dong and
+	Ke Wang},
+	title     = {Efficient Computation of Iceberg Cubes with Complex Measures},
+	booktitle = SIGMOD,
+	pages     = {1--12},
+	year      = {2001}
+}
+
+@inproceedings{xhl+03,
+	author    = {Dong Xin and
+	Jiawei Han and
+	Xiaolei Li and
+	Benjamin W. Wah},
+	title     = {Star-Cubing: Computing Iceberg Cubes by Top-Down and Bottom-Up Integration},
+	booktitle = VLDB,
+	pages     = {476--487},
+	year      = {2003}
+}
+
+@inproceedings{bsc13,
+	author    = {Leilani Battle and
+	Michael Stonebraker and
+	Remco Chang},
+	title     = {Dynamic reduction of query result sets for interactive visualizaton},
+	booktitle = BIGDATA,
+	pages     = {1--8},
+	year      = {2013}
+}
+
+@inproceedings{pcm16,
+	author    = {Yongjoo Park and
+	Michael J. Cafarella and
+	Barzan Mozafari},
+	title     = {Visualization-aware sampling for very large databases},
+	booktitle = ICDE,
+	pages     = {755--766},
+	year      = {2016}
+}
+
+@inproceedings{gfc+18,
+	author    = {Tao Guo and
+	Kaiyu Feng and
+	Gao Cong and
+	Zhifeng Bao},
+	title     = {Efficient Selection of Geospatial Data on Maps for Interactive and
+	Visualized Exploration},
+	booktitle = SIGMOD,
+	pages     = {567--582},
+	year      = {2018}
+}
+
+@inproceedings{nwy01,
+	author    = {Raymond T. Ng and
+	Alan S. Wagner and
+	Yu Yin},
+	title     = {Iceberg-cube computation with {PC} clusters},
+	booktitle = SIGMOD,
+	pages     = {25--36},
+	year      = {2001}
+}
+
+@inproceedings{nyb+11,
+	author    = {Arnab Nandi and
+	Cong Yu and
+	Philip Bohannon and
+	Raghu Ramakrishnan},
+	title     = {Distributed cube materialization on holistic measures},
+	booktitle = ICDE,
+	pages     = {183--194},
+	year      = {2011}
+}
+
+@inproceedings{aad+96,
+	author    = {Sameet Agarwal and
+	Rakesh Agrawal and
+	Prasad Deshpande and
+	Ashish Gupta and
+	Jeffrey F. Naughton and
+	Raghu Ramakrishnan and
+	Sunita Sarawagi},
+	title     = {On the Computation of Multidimensional Aggregates},
+	booktitle = VLDB,
+	pages     = {506--521},
+	year      = {1996}
+}
+
+@inproceedings{xhc+06,
+	author    = {Dong Xin and
+	Jiawei Han and
+	Hong Cheng and
+	Xiaolei Li},
+	title     = {Answering Top-k Queries with Multi-Dimensional Selections: The Ranking
+	Cube Approach},
+	booktitle = VLDB,
+	pages     = {463--475},
+	year      = {2006}
+}
+
+@book{h81,
+	title={Statistics},
+	author={WL Hays},
+	publisher={College Publishing},
+	year={1981}
+}
+
+@phdthesis{o93,
+	title={Random sampling from databases},
+	author={Frank Olken},
+	year={1993},
+	school={University of California, Berkeley}
+}
+
+@misc{kylin,
+	key=   {a },
+	title = {Apache Kylin},
+	howpublished = "{\url{kylin.apache.org}}",
+}
+
+@misc{spark,
+	key=   {a },
+	title = {Apache Spark},
+	howpublished = "{\url{spark.apache.org}}",
+}
+
+@misc{hive,
+	key=   {a },
+	title = {Apache HIVE},
+	howpublished = "{\url{hive.apache.org}}",
+}
+
+@misc{hadoop,
+	key=   {a },
+	title = {Apache Hadoop},
+	howpublished = "{\url{hadoop.apache.org/}}",
+}
+
+@article{glp98,
+	title={Topics on domination in directed graphs},
+	author={Ghoshal, J and Laskar, RR and Pillone, D},
+	journal={Pure and Applied Mathematics},
+	volume={209},
+	pages={401--438},
+	year={1998},
+	publisher={MARCEL DEKKER, INC.}
+}
+
+@inproceedings{rmw+16,
+	author    = {Jags Ramnarayan and
+	Barzan Mozafari and
+	Sumedh Wale and
+	Sudhir Menon and
+	Neeraj Kumar and
+	Hemant Bhanawat and
+	Soubhik Chakraborty and
+	Yogesh Mahajan and
+	Rishitesh Mishra and
+	Kishor Bachhav},
+	title     = {SnappyData: {A} Hybrid Transactional Analytical Store Built On Spark},
+	booktitle = SIGMOD,
+	pages     = {2153--2156},
+	year      = {2016}
+}
+
+@inproceedings{amp+13,
+	author    = {Sameer Agarwal and
+	Barzan Mozafari and
+	Aurojit Panda and
+	Henry Milner and
+	Samuel Madden and
+	Ion Stoica},
+	title     = {BlinkDB: queries with bounded errors and bounded response times on
+	very large data},
+	booktitle = {The European Conference on Computer Systems, EuroSys},
+	pages     = {29--42},
+	year      = {2013}
+}
+
+@misc{mapd,
+	key=   {a },
+	title = {MapD},
+	howpublished = "{\url{www.mapd.com}}",
+}
+
+@misc{kinetica,
+key=   {a },
+title = {Kinetica},
+howpublished = "{\url{www.kinetica.com}}",
+}
+
+@inproceedings{zlx+11,
+	author    = {Peixiang Zhao and
+	Xiaolei Li and
+	Dong Xin and
+	Jiawei Han},
+	title     = {Graph cube: on warehousing and {OLAP} multidimensional networks},
+	booktitle = SIGMOD,
+	pages     = {853--864},
+	year      = {2011}
+}
+
+@inproceedings{ldh+08,
+	author    = {Cindy Xide Lin and
+	Bolin Ding and
+	Jiawei Han and
+	Feida Zhu and
+	Bo Zhao},
+	title     = {Text Cube: Computing {IR} Measures for Multidimensional Text Database
+	Analysis},
+	booktitle = {Proceedings of the {IEEE} International Conference on Data Mining, ICDM},
+	pages     = {905--910},
+	year      = {2008}
+}
+
+@inproceedings{fzz+15,
+	author    = {Wei Feng and
+	Chao Zhang and
+	Wei Zhang and
+	Jiawei Han and
+	Jianyong Wang and
+	Charu C. Aggarwal and
+	Jianbin Huang},
+	title     = {{STREAMCUBE:} Hierarchical spatio-temporal hashtag clustering for
+	event exploration over the Twitter stream},
+	booktitle = ICDE,
+	pages     = {1561--1572},
+	year      = {2015}
+}
+
+@inproceedings{dhc+16,
+	author    = {Bolin Ding and
+	Silu Huang and
+	Surajit Chaudhuri and
+	Kaushik Chakrabarti and
+	Chi Wang},
+	title     = {Sample + Seek: Approximating Aggregates with Distribution Precision
+	Guarantee},
+	booktitle = SIGMOD,
+	pages     = {679--694},
+	year      = {2016}
+}
+
+@inproceedings{wot10,
+	author    = {Sai Wu and
+	Beng Chin Ooi and
+	Kian{-}Lee Tan},
+	title     = {Continuous sampling for online aggregation over multiple queries},
+	booktitle = SIGMOD,
+	pages     = {651--662},
+	year      = {2010}
+}
+
+@inproceedings{lwy+16,
+	author    = {Feifei Li and
+	Bin Wu and
+	Ke Yi and
+	Zhuoyue Zhao},
+	title     = {Wander Join: Online Aggregation via Random Walks},
+	booktitle = SIGMOD,
+	pages     = {615--629},
+	year      = {2016}
+}
+
+@inproceedings{hm99,
+	author    = {Peter J. Haas and
+	Joseph M. Hellerstein},
+	title     = {Ripple Joins for Online Aggregation},
+	booktitle = SIGMOD,
+	pages     = {287--298},
+	year      = {1999}
+}
+
+@article{wcl+15,
+	author    = {Lu Wang and
+	Robert Christensen and
+	Feifei Li and
+	Ke Yi},
+	title     = {Spatial Online Sampling and Aggregation},
+	journal   = PVLDB,
+	volume    = {9},
+	number    = {3},
+	pages     = {84--95},
+	year      = {2015}
+}
+
+@inproceedings{ksv+16,
+	author    = {Srikanth Kandula and
+	Anil Shanbhag and
+	Aleksandar Vitorovic and
+	Matthaios Olma and
+	Robert Grandl and
+	Surajit Chaudhuri and
+	Bolin Ding},
+	title     = {Quickr: Lazily Approximating Complex AdHoc Queries in BigData Clusters},
+	booktitle = SIGMOD,
+	pages     = {631--646},
+	year      = {2016}
+}
+
+@inproceedings{zgg+14,
+	author    = {Kai Zeng and
+	Shi Gao and
+	Jiaqi Gu and
+	Barzan Mozafari and
+	Carlo Zaniolo},
+	title     = {{ABS:} a system for scalable approximate queries with accuracy guarantees},
+	booktitle = SIGMOD,
+	pages     = {1067--1070},
+	year      = {2014}
+}
+
+@article{wsg+2012,
+	title={A review of spatial sampling},
+	author={Wang, Jin-Feng and Stein, A and Gao, Bin-Bo and Ge, Yong},
+	journal={Spatial Statistics},
+	volume={2},
+	pages={1--14},
+	year={2012},
+	publisher={Elsevier}
+}
+
+@article{lks13,
+	author    = {Lauro Didier Lins and
+	James T. Klosowski and
+	Carlos Eduardo Scheidegger},
+	title     = {Nanocubes for Real-Time Exploration of Spatiotemporal Datasets},
+	journal   = {{IEEE} Transactions on Visualization and Computer Graphics.},
+	volume    = {19},
+	number    = {12},
+	pages     = {2456--2465},
+	year      = {2013}
+}
+
+@book{f2009,
+	title={Statistical models: theory and practice},
+	author={Freedman, David A},
+	year={2009},
+	publisher={Cambridge University Press}
+}
+
+@article{s74,
+	title={Probability inequalities for the sum in sampling without replacement},
+	author={Serfling, Robert J},
+	journal={The Annals of Statistics},
+	pages={39--48},
+	year={1974},
+	publisher={JSTOR}
+}
+
+@misc{scikit,
+	key=   {a },
+	title = {Scikit Learn},
+	howpublished = "{\url{https://scikit-learn.org}}",
+}
+
+@article{al78,
+	title = "On domination and independent domination numbers of a graph",
+	journal = "Discrete Mathematics",
+	volume = "23",
+	number = "2",
+	pages = "73 - 76",
+	year = "1978",
+	author = "Robert B. Allan and Renu Laskar"
+}
+
+@article{sql99,
+	title={IEC 9075: 1999: Information technology| Database languages| SQL},
+	author={ISO, ISO},
+	journal={International Organization for Standardization},
+	year={1999}
+}
+
+@misc{postgres,
+	key=   {a },
+	title = {PostgreSQL database management system},
+	howpublished = "{\url{www.postgresql.org}}",
+}
+
+@inproceedings{cdk17,
+	author    = {Surajit Chaudhuri and
+	Bolin Ding and
+	Srikanth Kandula},
+	title     = {Approximate Query Processing: No Silver Bullet},
+	booktitle = SIGMOD,
+	pages     = {511--519},
+	year      = {2017}
+}
+
+@inproceedings{agp00,
+	title={Congressional samples for approximate answering of group-by queries},
+	author={Acharya, Swarup and Gibbons, Phillip B and Poosala, Viswanath},
+	booktitle={ACM SIGMOD Record},
+	volume={29},
+	pages={487--498},
+	year={2000},
+	organization={ACM}
+}
